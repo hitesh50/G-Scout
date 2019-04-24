@@ -153,9 +153,9 @@ def main():
             logging.exception(msg)
     try:
         if args.project_name :
-            list_projects(project_or_org='project-name', specifier=args.project_name)
+            list_projects(project_or_org='project-name', specifier=args.project_name, dest=project)
         elif args.project_id :
-            list_projects(project_or_org='project-id', specifier=args.project_id)
+            list_projects(project_or_org='project-id', specifier=args.project_id, dest=project)
         elif args.folder_id :
             list_projects(project_or_org='folder-id', specifier=args.folder_id)
         else:
